@@ -1,0 +1,144 @@
+/*添加界面*/
+.active_box{
+    background: #fff;
+    padding:0 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    margin-bottom: 10px;
+}
+.view_title{
+    font-weight: 600;
+    color: #0072d2;
+    padding-bottom: 12px;
+}
+.more_tip{
+    color: #999;
+    font-size: 12px;
+}
+.table-head{
+    border-bottom: 1px solid #eee;
+}
+.table-tr{
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+/* .table-tr:last-child{
+    border-bottom: 0 none;
+} */
+.grid-content{
+    text-align: center;
+    /* font-weight: 600; */
+}
+.price_input{
+    width: 100px;
+}
+.save_tip{
+    font-size: 12px;
+    color: #999;
+}
+.save_btn{
+    color: #0072d2;
+    cursor: pointer;
+}
+.submit_btn{
+    margin: 0 50% 10px;
+}
+.float_left{
+    float: left;
+}
+.table_btn_view{
+    padding: 10px;
+}
+.table_btn{
+    display: block;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+.table_btn:last-child{
+    margin-bottom: 0;
+}
+
+/*详情弹出框*/
+.data_view{
+    border: 1px solid #eee;
+}
+.data_row{
+    border-bottom: 1px solid #eee;
+}
+.data_row:last-child{
+    border-bottom: 0 none;
+}
+.data_row>span{
+    float: left;
+    padding: 5px;
+    border-right: 1px solid #eee;
+   
+}
+.data_row>.data_tit{
+    width: 60px;
+}
+
+.data_row>span:last-child{
+    border-right: 0 none;
+}
+.table_view{
+    display: flex;
+}
+
+.table_view>li{
+    flex: 6;
+    text-align: center;
+    border-right:1px solid #eee;
+}
+.table_view>li:last-child{
+    border-right: 0 none;
+}
+.table_view>li>div{
+    padding: 5px;
+}
+.table_view>li>div:first-child{
+    border-bottom: 1px solid #eee;
+}
+.data_name{
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+}
+.goods_view>span{
+    float: left;
+    padding: 5px;
+    border-right: 1px solid #eee;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.goods_view>span:last-child{
+    border-right: 0 none;
+}
+.goods_view{
+    border-bottom: 1px solid #eee;
+}
+.goods_view>.data_tit{
+    width: 60px;
+}
+.goods_view>.data_info{
+    width: 280px;
+}
+.goods_view:last-child{
+    border-bottom: 0 none;
+}
+.goods_view>.data_tit>img{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.el-dialog{
+    border-bottom: 1px solid #eee;
+}
+.page-box {
+background: #fff;
+text-align: center;
+padding: 10px;
+}
+.text-align {
+text-align: center;
+}

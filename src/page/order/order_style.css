@@ -1,0 +1,48 @@
+.order_box{
+}
+.order_view:hover{
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+
+}
+.order_view{
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px 24px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 10px;
+}
+.order_title{
+    background-color: #f5f7f9;
+    line-height: 40px;
+    color: #686868;
+    background-image: url(../../images/order-bg.png);
+    background-repeat: no-repeat;
+    padding-left: 33px;
+    border-radius: 20px 0 0 20px;
+}
+.order_main{
+    border: 1px solid #f0f0f0;
+    margin-top: 10px;
+}
+.order_ul{
+    padding: 12px 0;
+    font-size: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.order_li{
+    width: 33.3%;
+    float: left;
+}
+
+.order_li span:first-child{
+    padding-left: 12px;
+}
+.order_ul:last-child{
+    border-bottom: 0 none;
+}
+.order_li_row{
+    width: 100%;
+}
+.order_table{
+    border: 0 none;
+}

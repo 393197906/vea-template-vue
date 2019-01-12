@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <title>优鲜供应链合伙人/品牌商 -- 管理中心</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?89f8a5a7a8a6900e963a68fbbd2717f7"; // dev
+        <% const TARGET = process.env.target || 'dev' %>
+                <% if(TARGET === 'master') {%>
+                hm.src = "https://hm.baidu.com/hm.js?39e19c55d69c993a809d331ffd19c79c"; // master
+            <% } else if(TARGET === 'beta'){ %>
+                hm.src = "https://hm.baidu.com/hm.js?7e2fe750dd3ae6c075d4f0f15abf3e33"; //beta
+            <% }%>
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        #newBridge{
+            display: none !important;
+            z-index: 1000 !important;
+        }
+    </style>
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<!--<script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>-->
+<!--<script src="./static/qrcode.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"/>
+
+<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.9&key=0f79b417d8ddbabeeea4d883f788239d"></script>
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+</body>
+</html>

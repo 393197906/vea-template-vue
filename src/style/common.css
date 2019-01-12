@@ -1,0 +1,14 @@
+.card_view {
+    background: #fff;
+    padding: 12px;
+    /* box-shadow: 0 2px 12px 0 rgba(0,0,0,.1); */
+    border-radius: 3px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+  }
+  .card_view:last-child{
+    margin-bottom: 0;
+  }
+  .card_view:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  }

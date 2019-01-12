@@ -1,0 +1,129 @@
+.el-alert--info {
+  color: #303133;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+}
+
+.el-alert__content {
+  width: 100%
+}
+
+.name-warp {
+  border: 0 !important;
+  color: #9e9e9e !important;
+  background: rgba(250, 250, 250, 0) !important;
+}
+
+.name-time {
+  float: right;
+
+}
+
+.name-time .el-tag{
+  height: 0;
+  line-height: 0;
+}
+
+.el-icon-question:before {
+  font-size: 18px;
+}
+
+.el-alert__title.is-bold {
+  font-weight: 500;
+}
+
+.time .el-icon-question {
+  float: right !important;
+}
+
+.el-tooltip__popper.is-light {
+  width: 300px !important;
+  border: 1px solid #aaa;
+}
+
+#el-tooltip-6 {
+  width: 200px;
+}
+
+.el-alert__icon {
+  font-size: 16px;
+  width: 16px;
+  float: right;
+  position: absolute;
+  right: 20px;
+}
+
+.el-alert__title {
+  color: #666;
+}
+
+.statistical {
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.statistical ul li {
+  float: left;
+  width: 20%;
+  color: #999;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px dashed #e5e5e5;
+}
+
+.statistical ul li > .left {
+  height: 51px;
+  text-align: center;
+}
+
+.statistical ul li > .right {
+  text-align: center;
+}
+
+.statistical .right p {
+  color: #333;
+}
+
+.statistical ul li > div strong {
+  font-size: 20px;
+  color: #3a8ee6;
+  display: inline-block;
+  height: 52px;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+.el-icon-question:before {
+  color: #c0c4cc;
+  float: right;
+  padding-left: 5px;
+}
+
+.right .el-icon-question:before {
+  color: #c0c4cc;
+  float: right;
+  line-height: 10px;
+}
+
+.charts {
+  background: #fff;
+}
+
+.echarts {
+  width: 100% !important;
+}
+
+.echarts .el-row {
+  height: 400px;
+}
+
+.el-col-14 {
+  width: 100%;
+  height: 400px;
+  padding: 0;
+  border: 0;
+}
+
