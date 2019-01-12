@@ -3,7 +3,7 @@ import createService from './service/index'
 export default vue => {
   const fetch = vue.$_createFetch({
     headers: {
-      'Authorization': ""
+      'Authorization': ''
     },
     error: ({ statusCode = 500, message = '未知错误' }) => {
       if (message.indexOf('timeout') > -1) {
@@ -15,9 +15,9 @@ export default vue => {
         // return
       }
     }
-  });
+  })
   const urls = {
-    cloudUrl:CLOUD_URL
-  };
-  return createService(fetch,urls)
+    cloudUrl: CLOUD_URL
+  }
+  return createService(fetch, urls)
 }

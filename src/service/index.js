@@ -1,7 +1,7 @@
-export default ({get,post},urls) => {
-    return new class {
-        async test(params){
-            return await get()
-        }
+export default ({ get, post }, urls) => {
+  return new class {
+    test (params) {
+      return get()
     }
+  }
 }
