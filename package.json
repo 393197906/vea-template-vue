@@ -1,28 +1,20 @@
 {
-  "name": "vea-demo",
+  "name": "vea-template-vue",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "vea dev",
-    "build": "vea build dev",
-    "deploy": "vea deploy"
+    "build:dev": "vea build dev",
+    "deploy:dev": "vea deploy dev",
+    "build:beta": "vea build beta",
+    "deploy:beta": "vea deploy beta",
+    "build:master": "vea build master",
+    "deploy:master": "vea deploy master"
   },
   "dependencies": {
-    "awe-dnd": "^0.3.1",
-    "axios": "^0.18.0",
-    "echarts": "^4.0.4",
-    "element-ui": "2.2.1",
-    "lodash": "^4.17.10",
-    "mockjs": "^1.0.1-beta3",
-    "nprogress": "^0.2.0",
-    "print-js": "1.0.43",
-    "vue-echarts": "^3.0.7",
-    "vue-html5-editor": "^1.1.1",
-    "vue-table-with-tree-grid": "^0.2.4",
-    "yt-json2excel": "^0.2.1"
+    "element-ui": "2.4.11"
   },
   "devDependencies": {
-    "vea": "^1.0.6-alpha"
   }
 }
