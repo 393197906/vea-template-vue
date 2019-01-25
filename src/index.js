@@ -1,17 +1,11 @@
 import { vue as Vue } from 'vea'
+import VueMeta from 'vue-meta'
 import App from './App.vue'
-import store from './store'
 import router from './router'
-import service from './service.js'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-
-Vue.prototype.$service = service(Vue)
-Vue.use(ElementUI)
+Vue.use(VueMeta)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  store,
   router,
   components: { App },
   template: '<App/>'

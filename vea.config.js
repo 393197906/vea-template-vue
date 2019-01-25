@@ -1,5 +1,10 @@
 const path = require('path')
 module.exports = {
+  plugins: [
+    ['vea-plugin-vue-static', {
+      routes: ['/', '/test']
+    }]
+  ],
   alias: {
     '@': path.resolve(__dirname, './src/')
   },
@@ -12,18 +17,8 @@ module.exports = {
   env: {
     dev: {
       defined: {
-        CLOUD_URL: 'http://devcloud.91youxian.net'
-      }
-    },
-    beta: {
-      defined: {
-        CLOUD_URL: 'http://betacloud.91youxian.net'
-      }
-    },
-    master: {
-      defined: {
-        CLOUD_URL: 'https://cloudhttps.91youxian.net'
+        //  定义环境变量
       }
     }
   }
-}
+};
