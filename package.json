@@ -16,8 +16,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "element-ui": "2.4.11",
-    "vea": "^1.1.0-alpha"
+    "element-ui": "2.5.4",
+    "vea": "^1.1.1-alpha"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
