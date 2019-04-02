@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "element-ui": "2.7.0",
-    "vea": "^1.4.2-alpha"
+    "vea": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
