@@ -1,5 +1,6 @@
-import { vue, vuex } from 'vea'
-vue.use(vuex)
+import Vue from 'vue'
+import vuex from 'vuex'
+Vue.use(vuex)
 const state = {
 
 }

@@ -1,11 +1,12 @@
-import { vue as Vue, extendVue } from 'vea'
+import Vue from 'vue'
+import vealPlugin from 'veal/vue'
 import App from './App.vue'
 import store from './store'
 import router from './router'
 import service from './service.js'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-Vue.use(extendVue)
+Vue.use(vealPlugin)
 Vue.prototype.$service = service(Vue)
 Vue.use(ElementUI)
 /* eslint-disable no-new */

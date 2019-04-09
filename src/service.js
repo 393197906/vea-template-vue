@@ -1,21 +1,29 @@
+import { createFetch, applyMiddleware, methods, filter, headers, log } from 'veal/http'
+import { Message } from 'element-ui'
 import createService from './service/index'
 
-export default vue => {
-  const fetch = vue.$_createFetch({
-    headers: {
-      'Authorization': ''
-    },
-    error: ({ statusCode = 500, message = '未知错误' }) => {
-      if (message.indexOf('timeout') > -1) {
-        message = '请求超时'
+const getToken = function () {
+  const userInfo = JSON.parse(sessionStorage.getItem('user_info'))
+  if (!userInfo) return ''
+  return userInfo.token
+}
+
+export default Vue => {
+  const fetch = createFetch(applyMiddleware(
+    methods,
+    filter(
+      ({ statusCode = 500, message }) => {
+        message = message && typeof message === 'string' ? message : '未知错误'
+        if (message && message.indexOf('timeout') > -1) {
+          message = '请求超时'
+        }
+        Message.error(message)
       }
-      if (parseInt(statusCode) === 403) {
-        // sessionStorage.clear()
-        // history.go(0)
-        // return
-      }
-    }
-  })
+    ),
+    headers({
+      'Authorization': getToken
+    })
+  ))
   const urls = {
     cloudUrl: CLOUD_URL
   }
