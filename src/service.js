@@ -1,4 +1,4 @@
-import { createFetch, applyMiddleware, methods, filter, headers, log } from 'veal/http'
+import { createFetch, applyMiddleware, methods, filter, headers, log } from '@aev/http'
 import { Message } from 'element-ui'
 import createService from './service/index'
 
